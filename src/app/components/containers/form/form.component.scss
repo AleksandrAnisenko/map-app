@@ -1,0 +1,55 @@
+.form {
+    border: 3px solid rgb(146, 140, 140);
+    border-radius: 15px;
+    
+}
+
+.markerForm {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(146, 140, 140);
+    padding: 20px 5px 5px;
+}
+
+.coord-wrapper {
+    display: flex;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 5px 15px 15px 15px;
+    border-radius: 5px;
+}
+
+label {
+    padding-left: 15px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-top: 1px solid rgb(146, 140, 140);
+}
+
+button {
+    background-color: #b2d8b4;
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #66a568;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #cae0cb;
+    }
+}

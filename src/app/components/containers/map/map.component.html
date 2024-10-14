@@ -1,0 +1,10 @@
+<div class="map-container">
+     <div class="map-frame">
+          <div class="map"
+               leaflet
+               [leafletOptions]="options"
+               (leafletMapReady)="onMapReady($event)"
+               (leafletClick)="mapClicked($event)">
+          </div>
+     </div>
+</div>

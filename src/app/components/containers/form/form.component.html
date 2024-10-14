@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>Маршрут</h1>
+        <form (ngSubmit)="onSubmit()" [formGroup]="markerForm" class="form">
+            <div formArrayName="markers">
+                <div *ngFor="let marker of markers.controls; let i = index" [formGroupName]="i" class="markerForm">
+                    <label>Название</label>
+                    <input
+                        type="text"
+                        formControlName="name"
+                    />
+                    <div class="coord-wrapper">
+                        <div class="input-wrapper">
+                            <label>Широта</label>
+                            <input
+                                type="text"
+                                formControlName="lat"
+                            />
+                        </div>
+                        <div class="input-wrapper">
+                            <label>Долгота</label>
+                        <input
+                            type="text"
+                            formControlName="lng"
+                        />  
+                        </div> 
+                    </div>
+                </div>
+                <div class="btn-wrapper">
+                    <button class="submit" type="submit">
+                        Применить
+                    </button>
+                    <button class="add-more" type="button" (click)="addInputControl()">
+                        Добавить еще одну точку
+                    </button>
+                </div> 
+            </div>
+        </form>
+</div>
